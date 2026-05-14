@@ -351,214 +351,160 @@
     font-size: 20px;
   }
 }
-.medical-kak-poluchit-lechenie-wrapper {
+.medical-vidi-laboratornih-wrapper {
   width: 100%;
   max-width: 1350px;
-  margin: 60px auto;
-  padding: 0 25px;
-}
-
-.medical-kak-poluchit-lechenie-title,
-.medical-populyarnie-analizi-title {
-  margin-bottom: 35px;
-}
-.medical-kak-poluchit-lechenie-title h2,
-.medical-populyarnie-analizi-title h2 {
-  font-size: 52px;
-  color: #0e223d;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.medical-kak-poluchit-lechenie-cards {
+  margin: 0 auto 80px;
+  background: #222222;
+  overflow: hidden;
+  padding: 70px 60px;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
-  gap: 25px;
-  margin-bottom: 120px;
-}
-
-.medical-uznayte-vhodit-li-card,
-.medical-podgotovte-neobhodimie-card,
-.medical-v-techenie-3h-card {
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-  width: 100%;
-  padding: 28px;
-}
-.medical-uznayte-vhodit-li-card p,
-.medical-podgotovte-neobhodimie-card p,
-.medical-v-techenie-3h-card p {
-  margin-top: 25px;
-  font-size: 18px;
-  line-height: 1.7;
-  color: #555;
-}
-
-.medical-uznayte-vhodit-li-icon,
-.medical-podgotovte-neobhodimie-icon,
-.medical-v-techenie-3h-icon {
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  background: #29b765;
-  color: #ffffff;
-  font-size: 28px;
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.medical-populyarnie-analizi-cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 22px;
-  flex-wrap: wrap;
+.medical-vidi-laboratornih-left {
+  width: 62%;
+  position: relative;
+  z-index: 2;
 }
 
-.medical-onkologiya-card,
-.medical-issledovaniya-krovi-card,
-.medical-issledovaniya-mochi-card,
-.medical-allergii-card {
-  background: #ffffff;
-  border: 1px solid #e3e3e3;
-  border-radius: 4px;
-  padding: 24px;
-  width: 23%;
+.medical-vidi-laboratornih-title {
+  color: #ffffff;
+  font-size: 46px;
+  line-height: 1.2;
+  margin-bottom: 45px;
 }
-.medical-onkologiya-card h3,
-.medical-issledovaniya-krovi-card h3,
-.medical-issledovaniya-mochi-card h3,
-.medical-allergii-card h3 {
-  color: #29b765;
-  font-size: 20px;
-  margin: 18px 0 20px;
-  position: relative;
+
+.medical-vidi-laboratornih-lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
 }
-.medical-onkologiya-card h3::after,
-.medical-issledovaniya-krovi-card h3::after,
-.medical-issledovaniya-mochi-card h3::after,
-.medical-allergii-card h3::after {
-  content: "";
-  width: 70px;
-  height: 2px;
-  background: #29b765;
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-}
-.medical-onkologiya-card ul,
-.medical-issledovaniya-krovi-card ul,
-.medical-issledovaniya-mochi-card ul,
-.medical-allergii-card ul {
+
+.medical-obshee-issledovanie-list,
+.medical-gematologicheskie-list {
+  width: 100%;
   list-style: none;
-  margin-top: 18px;
 }
-.medical-onkologiya-card ul li,
-.medical-issledovaniya-krovi-card ul li,
-.medical-issledovaniya-mochi-card ul li,
-.medical-allergii-card ul li {
-  margin-bottom: 18px;
-  color: #555;
-  font-size: 17px;
+.medical-obshee-issledovanie-list li,
+.medical-gematologicheskie-list li {
+  color: #d8d8d8;
+  font-size: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  padding-left: 22px;
   line-height: 1.5;
 }
-
-.medical-onkologiya-icon,
-.medical-issledovaniya-krovi-icon,
-.medical-issledovaniya-mochi-icon,
-.medical-allergii-icon {
-  width: 65px;
-  height: 65px;
+.medical-obshee-issledovanie-list li::before,
+.medical-gematologicheskie-list li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background: #29b765;
-  color: #ffffff;
-  font-size: 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 55px;
-  height: 55px;
-  font-size: 22px;
+  background: #20c76a;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+.medical-vidi-laboratornih-right {
+  width: 38%;
+  position: relative;
+  height: 100%;
+}
+.medical-vidi-laboratornih-right img {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  display: block;
+}
+
+.medical-zeleniy-shape {
+  width: 95px;
+  height: 95px;
+  background: #20c76a;
+  border-radius: 24px;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  transform: rotate(35deg);
+  z-index: 1;
+}
+
+.medical-jeltiy-shape {
+  width: 110px;
+  height: 110px;
+  background: #f2cf3f;
+  border-radius: 24px;
+  position: absolute;
+  right: 20px;
+  top: 140px;
+  transform: rotate(35deg);
+  z-index: 1;
+}
+
+.medical-beliy-shape {
+  width: 260px;
+  height: 260px;
+  background: #ffffff;
+  border-radius: 40px;
+  position: absolute;
+  left: -20px;
+  top: 90px;
+  transform: rotate(35deg);
+  z-index: 1;
 }
 
 @media (max-width: 510px) {
-  .medical-kak-poluchit-lechenie-wrapper {
-    padding: 0 14px;
-    margin: 40px auto;
-  }
-  .medical-kak-poluchit-lechenie-title,
-  .medical-populyarnie-analizi-title {
-    margin-bottom: 25px;
-  }
-  .medical-kak-poluchit-lechenie-title h2,
-  .medical-populyarnie-analizi-title h2 {
-    font-size: 30px;
-  }
-  .medical-kak-poluchit-lechenie-cards {
+  .medical-vidi-laboratornih-wrapper {
     flex-direction: column;
-    gap: 18px;
-    margin-bottom: 60px;
+    padding: 35px 18px;
+    gap: 40px;
+    margin-bottom: 50px;
   }
-  .medical-uznayte-vhodit-li-card,
-  .medical-podgotovte-neobhodimie-card,
-  .medical-v-techenie-3h-card {
+  .medical-vidi-laboratornih-left {
     width: 100%;
-    padding: 22px;
   }
-  .medical-uznayte-vhodit-li-card p,
-  .medical-podgotovte-neobhodimie-card p,
-  .medical-v-techenie-3h-card p {
-    font-size: 15px;
-    line-height: 1.6;
-    margin-top: 18px;
+  .medical-vidi-laboratornih-title {
+    font-size: 28px;
+    margin-bottom: 30px;
   }
-  .medical-uznayte-vhodit-li-icon,
-  .medical-podgotovte-neobhodimie-icon,
-  .medical-v-techenie-3h-icon {
-    width: 58px;
-    height: 58px;
-    font-size: 22px;
-  }
-  .medical-populyarnie-analizi-cards {
+  .medical-vidi-laboratornih-lists {
     flex-direction: column;
-    gap: 18px;
+    gap: 0;
   }
-  .medical-onkologiya-card,
-  .medical-issledovaniya-krovi-card,
-  .medical-issledovaniya-mochi-card,
-  .medical-allergii-card {
+  .medical-obshee-issledovanie-list li,
+  .medical-gematologicheskie-list li {
+    font-size: 16px;
+    margin-bottom: 22px;
+    padding-left: 18px;
+  }
+  .medical-obshee-issledovanie-list li::before,
+  .medical-gematologicheskie-list li::before {
+    width: 8px;
+    height: 8px;
+    top: 8px;
+  }
+  .medical-vidi-laboratornih-right {
     width: 100%;
-    padding: 20px;
   }
-  .medical-onkologiya-card h3,
-  .medical-issledovaniya-krovi-card h3,
-  .medical-issledovaniya-mochi-card h3,
-  .medical-allergii-card h3 {
-    font-size: 18px;
-    margin: 16px 0 18px;
+  .medical-zeleniy-shape {
+    width: 60px;
+    height: 60px;
+    left: 20px;
   }
-  .medical-onkologiya-card ul,
-  .medical-issledovaniya-krovi-card ul,
-  .medical-issledovaniya-mochi-card ul,
-  .medical-allergii-card ul {
-    margin-top: 16px;
+  .medical-jeltiy-shape {
+    width: 70px;
+    height: 70px;
+    right: 10px;
+    top: 90px;
   }
-  .medical-onkologiya-card ul li,
-  .medical-issledovaniya-krovi-card ul li,
-  .medical-issledovaniya-mochi-card ul li,
-  .medical-allergii-card ul li {
-    font-size: 15px;
-    margin-bottom: 14px;
-  }
-  .medical-onkologiya-icon,
-  .medical-issledovaniya-krovi-icon,
-  .medical-issledovaniya-mochi-icon,
-  .medical-allergii-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
+  .medical-beliy-shape {
+    width: 170px;
+    height: 170px;
+    top: 60px;
+    left: 0;
   }
 }/*# sourceMappingURL=style.css.map */
